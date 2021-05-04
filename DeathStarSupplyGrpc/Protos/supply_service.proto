@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option csharp_namespace = "DeathStarSupplyGrpc.Protos";
+
+package death_star_supply;
+
+// The greeting service definition.
+service SupplyService {
+  rpc GetSupplies(GetSuppliesRequest) returns (GetSuppliesResponse);
+}
+
+message GetSuppliesRequest {}
+
+message GetSuppliesResponse {
+  repeated SupplyItem items = 1;
+}
+
+message SupplyItem {
+  string code = 1;
+  string description = 2;
+  int32 available = 3;
+  double price = 4;
+}
+

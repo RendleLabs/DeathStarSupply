@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="DeathStarSupply.SupplyService" CodeBehind="SupplyService.svc.cs" %>
